@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2> New Menu Item </h2>
+<form method="post" action="{{ url_for('newMenuItem', restaurant_id=restaurant_id) }}">
+    <p>Name:</p>
+    <input type="text" name="name">
+    <input type="submit" value="Create">
+</form>
+
+{% endblock %}
